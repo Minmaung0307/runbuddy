@@ -33,7 +33,7 @@ header, a {
     color: #FCE138;
 }
 
-h1:hover {
+h1 a:hover {
     color: springgreen;
     transition: all ease-in-out 350ms;
 }
