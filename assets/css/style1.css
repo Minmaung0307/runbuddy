@@ -7,7 +7,7 @@
 body {
     /* more on this cracy alphanumerical value in a minute! */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #39a6b2;
+    color: #39a6b2;
 }
 
 /* Apply Style to <header> */
@@ -73,7 +73,7 @@ section {
 
 /* Hero Style Start */
 .hero {
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url('../images/hero-bg.jpg');
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -93,13 +93,13 @@ section {
 }
 /* border: is shorthand of border-style: solid, border-width: 3px, and border-color: #024e76 */
 
-.hero-form p {
-    margin: 5px 0 15px 0;
-}
-
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
 }
 
 .form-input {
@@ -119,9 +119,9 @@ section {
 .hero-form button {
     color: #fce138;
     background-color: #024e76;
+    border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border: none;
 }
 /* HERO STYLES END */
 
@@ -147,11 +147,6 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
-}
-
-.steps {
-    text-align: center;
-    background: #fce138;
 }
 
 /* already combined .steps h2 ^ .intro h2 
@@ -268,12 +263,12 @@ section {
     color: #fce138;
 }
 
-.confact-info iframe {
+.contact-info iframe {
     width: 400px;
     height: 400px;
 }
 
-.confact-info div {
+.contact-info div {
     width: 410px;
     display: inline-block;
     vertical-align: top;
@@ -287,15 +282,15 @@ section {
     font-size: 32px;
 }
 
-.confact-info p, 
-.confact-info address {
+.contact-info p, 
+.contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
     font-style: normal;
 }
 
-.confact-info a {
+.contact-info a {
     color: #fce138;
 }
 
