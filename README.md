@@ -1,7 +1,20 @@
-A. First Phase
-1. Added given contents to the header with css effects.
-2. Set up footer as well.
-3. Added four section heading names in the body.
+Building 'Run Buddy'
+====================
 
-B. Second Phase
-# Run-Buddy
+1.  Header, Footer and Nav - HTML
+    Header, Footer and Nav - CSS
+
+2.  Input Form - HTML
+    Input Form - CSS
+
+3.  Section - HTML
+    Section - CSS
+
+4.  Article - HTML
+    Article - CSS
+
+5.  Contact Info - HTML
+    Contact Info - CSS
+
+6.  Privacy Policy - HTML
+    Privacy Policy - CSS
