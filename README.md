@@ -1,20 +1,15 @@
-Building 'Run Buddy'
-====================
+# Run Buddy
+===========
 
-1.  Header, Footer and Nav - HTML
-    Header, Footer and Nav - CSS
+## Purpose
+A website that offers fitness training services.
 
-2.  Input Form - HTML
-    Input Form - CSS
+## Built With
+* HTML
+* CSS
 
-3.  Section - HTML
-    Section - CSS
+## Website
+https://lernantino.github.io/run-buddy/
 
-4.  Article - HTML
-    Article - CSS
-
-5.  Contact Info - HTML
-    Contact Info - CSS
-
-6.  Privacy Policy - HTML
-    Privacy Policy - CSS
+## Contribution
+Made with ❤️ by [your name]
