@@ -71,22 +71,44 @@ header nav ul li a {
 /* Hero Style Start */
 .hero {
     background-image: url('../images/hero-bg.jpg');
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   /*--height: 600px;
+    position: relative;--because of flex*/
 }
+
+/*-- added to 'call to action (CTA) to flexbox'--*/
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+  }
+  /*-- end of CTA --*/
 
 /* Form Style Starts */
 .hero-form {
     border: solid 3px var(--secondary-color);
     background-color: var(--primary-color);
     padding: 20px;
-    width: 500px;
     color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    /*--width: 500px;
     position: absolute;
     bottom: 120px;
-    right: 140px;
+    right: 140px;--because of flex*/
 }
 /* border: is shorthand of border-style: solid, border-width: 3px, and border-color: #024e76 */
 
@@ -299,17 +321,20 @@ footer {
     background: var(--primary-color);
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
+    /*--display: inline;--because display:flex etc. in footer --*/
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
+    /*--float: right;--because display:flex etc. in footer --*/
     line-height: 1.5;
     text-align: right;
 }
