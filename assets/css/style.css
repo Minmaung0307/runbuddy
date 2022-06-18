@@ -151,10 +151,15 @@ section {
 .section-title {
     font-size: 55px;
     color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    /*--because of flexbox-
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
+    display: inline-block;--*/
 }
 
 .primary-border {
@@ -166,9 +171,10 @@ section {
 }
 
 /*-- What We Do Section Style Starts --*/
+/*--because of flexbox-
 .intro {
     text-align: center;
-}
+}--*/
 
 .intro h2 {
     font-size: 55px;
@@ -186,6 +192,7 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* What You Do Section Style Starts --*/
@@ -199,7 +206,8 @@ section {
 }
 
 .steps {
-    text-align: center;
+
+    /*--text-align: center;--*/
     background: var(--primary-color);
 }
 
@@ -229,7 +237,7 @@ section {
 
 /*-- Meet The Trainers Section Style Starts --*/
 .trainers {
-    text-align: center;
+    /*--text-align: center;--*/
 }
 
 .trainer {
@@ -275,9 +283,13 @@ section {
     text-align: right;
 }
 
+.flex-row {
+    display: flex;
+  }
+
 /* REACH OUT STYLES START */
 .contact {
-    text-align: center;
+    /*--text-align: center;--*/
     background: var(--secondary-color);
 }
 
