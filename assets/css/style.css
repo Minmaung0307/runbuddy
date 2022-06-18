@@ -1,34 +1,44 @@
+/*-- Run Buddy Style Starts --*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --primary-color-transparent: rgba(252,225,56,0.8);
+    --secondary-color-transparent: rgba(2, 78, 118, 0.8);
+}
+
 body {
     /* more on this cracy alphanumerical value in a minute! */
     font-family: Arial, Helvetica, sans-serif;
-    color: #39a6b2;
+    color: var(--tertiary-color);
 }
 
 /* Apply Style to <header> */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--primary-color);
     margin: 0;
     display: inline;
 }
 
 header a {
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);
 }
 
+/* Apply Style to navbar */
 header nav {
     float: right;
     margin: 7px 0;
@@ -44,33 +54,6 @@ header nav ul li a {
     font-size: 22px;
 }
 
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
-}
-
-section {
-    padding: 60px;
-}
-
 /* Hero Style Start */
 .hero {
     background-image: url('../images/hero-bg.jpg');
@@ -79,14 +62,14 @@ section {
     background-position: center;
     position: relative;
 }
-/* Hero Style End */
 
+/* Form Style Starts */
 .hero-form {
-    border: solid 3px #024e76;
-    background-color: #fce138;
+    border: solid 3px var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px;
     width: 500px;
-    color: #024e76;
+    color: var(--secondary-color);
     position: absolute;
     bottom: 120px;
     right: 140px;
@@ -103,11 +86,11 @@ section {
 }
 
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
 }
@@ -117,52 +100,71 @@ section {
 }
 
 .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
 }
-/* HERO STYLES END */
 
+/*-- All Main Section Style Starts --*/
+section {
+    padding: 60px;
+}
+
+.section-title {
+    font-size: 55px;
+    color: var(--secondary-color);
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+/*-- What We Do Section Style Starts --*/
 .intro {
     text-align: center;
 }
 
-/* already combined .steps h2 ^ .intro h2
 .intro h2 {
     font-size: 55px;
-    color: #024e76;
+    color: var(--secondary-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color: #fce138;
+    border-color: var(--primary-color);
     display: inline-block;
 }
-*/
 
 .intro p {
     line-height: 1.7;
-    color: #39a6b2;
+    color: var(--tertiary-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
 }
 
-/* already combined .steps h2 ^ .intro h2 
+/* What You Do Section Style Starts --*/
 .steps h2 {
     font-size: 55px;
-    color: #024e76;
+    color: var(--secondary-color);
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
-*/
 
 .steps {
     text-align: center;
-    background: #fce138;
+    background: var(--primary-color);
 }
 
 .steps div {
@@ -175,7 +177,7 @@ section {
 }
 
 .steps h3 {
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 46px;
     margin-top: 10px;
 }
@@ -189,23 +191,7 @@ section {
     font-size: 38px;
 }
 
-.section-title {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
-}
-
-.primary-border {
-    border-color: #fce138;
-}
-
-.secondary-border {
-    border-color: #39a6b2;
-}
-
+/*-- Meet The Trainers Section Style Starts --*/
 .trainers {
     text-align: center;
 }
@@ -213,8 +199,8 @@ section {
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
-    background: #024e76;
-    color: #fce138;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     overflow: auto;
 }
 
@@ -256,11 +242,11 @@ section {
 /* REACH OUT STYLES START */
 .contact {
     text-align: center;
-    background: #024e76;
+    background: var(--secondary-color);
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-info iframe {
@@ -278,7 +264,7 @@ section {
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 32px;
 }
 
@@ -291,7 +277,37 @@ section {
 }
 
 .contact-info a {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
-/* REACH OUT STYLES END */
+/* Apply Style to footer */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    display: inline;
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .steps {
+        background-color: yellowgreen;
+    }
+  }
+
+/*-- End of Run Buddy Style --*/
