@@ -1,4 +1,4 @@
-Building 'Run Buddy'
+# Run Buddy Inc.
 ====================
 
 1.  Header, Footer and Nav - HTML
