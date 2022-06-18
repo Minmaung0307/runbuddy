@@ -47,14 +47,25 @@ header nav {
     margin: 7px 0;
 }
 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+/*--[because added display: flex; to header, remove this and replace this with 'header nav ul' above] 
 header nav ul li {
     display: inline;
 }
+--*/
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
+    /*-- change font-size:22px to 1.55fvw - because of flexbox --*/
 }
 
 /* Hero Style Start */
