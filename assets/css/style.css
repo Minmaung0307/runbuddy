@@ -84,8 +84,8 @@ header nav ul li a {
 
 /*-- added to 'call to action (CTA) to flexbox'--*/
 .hero-cta {
-    width: 35%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
@@ -105,7 +105,7 @@ header nav ul li a {
     background-color: var(--primary-color);
     padding: 20px;
     color: var(--secondary-color);
-    width: 40%;
+    width: 100%;
     margin: 3.5%;
     /*--width: 500px;
     position: absolute;
@@ -147,7 +147,7 @@ header nav ul li a {
 
 /*-- All Main Section Style Starts --*/
 section {
-    padding: 60px;
+    padding: 30px 15px;
 }
 
 .section-title {
@@ -157,7 +157,7 @@ section {
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
-    width: 50%;
+    width: 95%;
     /*--because of flexbox-
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
@@ -191,7 +191,7 @@ section {
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
@@ -242,20 +242,25 @@ section {
 .step h3 {
     color: var(--secondary-color);
     font-size: 46px;
-    flex: 1 30%;
+    flex: 1 100%;
+    text-align: center;
     /*--margin-top: 10px;--*/
 }
 
 .step-info {
-    flex: 2 70%;
+    flex: 2 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
+    flex: 0 32%;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .step-img img {
@@ -263,7 +268,7 @@ section {
 }
 
 .step-text {
-    flex: 12;
+    flex: 100%;
 }
 
 .step-text p {
@@ -291,7 +296,7 @@ section {
     margin: 0 auto 20px auto;
     background: var(--secondary-color);
     color: var(--primary-color);
-    flex: 1;
+    flex: 0 100%;
     /*--width: 900px;
     overflow: auto;--*/
 }
@@ -349,16 +354,18 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .contact-info > * {
-    flex: 1;
+    flex: 0 100%;
     margin: 15px;
 }
 
 .contact-info iframe {
     /*--width: 400px;--*/
     height: 400px;
+    flex: 1 100%;
 }
 
 .contact-info div {
@@ -386,6 +393,10 @@ section {
 
 .contact-info a {
     color: var(--primary-color);
+}
+
+.contact-form {
+    order: 3;
 }
 
 .contact-form input,
@@ -438,9 +449,44 @@ footer a {
 }
 
 @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  }
 
-    
-}
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+
+    .hero-form button {
+      width: 100%;
+    }
+
 /*--Example of Mediaqueries --
 @media screen and (max-width: 900px) {
     a {
