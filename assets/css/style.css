@@ -205,12 +205,24 @@ section {
     border-color: var(--tertiary-color);
 }
 
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .steps {
 
     /*--text-align: center;--*/
     background: var(--primary-color);
 }
 
+/*--
 .steps div {
     margin-bottom: 80px;
 }
@@ -220,20 +232,48 @@ section {
     margin: 10px 0;
 }
 
-.steps h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    margin-top: 10px;
-}
-
-.steps p {
-    color: #39a6b2;
-    font-size: 23px;
-}
-
 .steps span {
     font-size: 38px;
 }
+--*/
+
+.step h3 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    flex: 1 30%;
+    /*--margin-top: 10px;--*/
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+  }
 
 /*-- Meet The Trainers Section Style Starts --*/
 .trainers {
