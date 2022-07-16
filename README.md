@@ -12,4 +12,4 @@ A website that offers fitness training services.
 https://minmaung0307.github.io/runbuddy/
 
 ## Contribution
-Made with ❤️ by [your name]
+Made with ❤️ by Min!
